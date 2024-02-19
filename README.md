@@ -25,4 +25,4 @@ You can open the project in Visual Studio 2019 or later and build it that way.
 
 Or, if you don't want to use Visual Studio at all, you can use [MSBuild](https://community.chocolatey.org/packages/visualstudio2019buildtools) to build the program:
 
-`msbuild [Path to your solution(*.sln)] /t:Build /p:Configuration=Release /p:TargetFrameworkVersion=v3.5`
+```msbuild [Path to your solution(*.sln)] /t:Build /p:Configuration=Release /p:TargetFrameworkVersion=v3.5```
