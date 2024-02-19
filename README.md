@@ -1,6 +1,7 @@
 # 2008SOAPLauncher
 
 An addon launcher for Sodikm that allows launching of 2008 Roblox clients (and servers using SOAP).
+Built with C# and .NET Framework 3.5.
 
 # Usage
 
