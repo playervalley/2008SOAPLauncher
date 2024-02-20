@@ -66,13 +66,6 @@ namespace _2008SOAPLauncher
             }
         }
 
-        static string DeleteLines(string s, int linesToRemove)
-        {
-            return s.Split(Environment.NewLine.ToCharArray(), 
-                linesToRemove + 1
-            ).Skip(linesToRemove).FirstOrDefault();
-        }
-
         static void Main(string[] args)
         {
             Console.Write("Detected function: ");
