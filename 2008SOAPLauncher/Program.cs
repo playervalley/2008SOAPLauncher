@@ -53,17 +53,11 @@ namespace _2008SOAPLauncher
             return true;
         }
 
-        public static bool IsFileReady(string filename)
+        static string DeleteLines(string s, int linesToRemove)
         {
-            try
-            {
-                using (FileStream inputStream = File.Open(filename, FileMode.Open, FileAccess.Read, FileShare.None))
-                    return inputStream.Length > 0;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            return s.Split(Environment.NewLine.ToCharArray(), 
+                linesToRemove + 1
+            ).Skip(linesToRemove).FirstOrDefault();
         }
 
         static void Main(string[] args)
