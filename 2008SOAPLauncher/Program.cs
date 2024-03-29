@@ -11,10 +11,10 @@ namespace _2008SOAPLauncher
 {
     class Program
     {
-        private static readonly string Client = "Roblox.exe";
-        private static readonly string Server = "RCCService.exe";
+        private const string Client = "Roblox.exe";
+        private const string Server = "RCCService.exe";
         private static readonly string CurrentPath = Environment.CurrentDirectory + "\\data\\clients\\2008E\\Player\\";
-        private static readonly int StartPort = 60000;
+        private const int StartPort = 60000;
 
         static void Error(string reason)
         {
